@@ -54,6 +54,7 @@ For example, the following producer endpoint uses the createBatch API to create 
 The in message must contain a body that can be converted into an InputStream (usually UTF-8 CSV or XML content from a file, etc.) and header fields 'jobId' for the Job and 'contentType' for the Job content type, which can be XML, CSV, ZIP\_XML or ZIP\_CSV. The put message body will contain [BatchInfo] on success, or throw a [SalesforceException] on error.
 
 	...to("force:createBatchJob")..
+[a link](https://github.com/prathap2k/camel-1/blob/master/components/camel-salesforce/camel-salesforce-component/Example.md)
 
 ## Streaming API ##
 
